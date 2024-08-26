@@ -1,0 +1,58 @@
+using System;
+
+class Program {
+	public static void Main(String[] args) {
+
+		Console.WriteLine("Welcome to the Calculator!");
+		Console.WriteLine("ENTER NUMBERS ONLY!");
+
+		Console.WriteLine("");
+
+		Console.WriteLine("Enter the 1st Value: ");
+		float FirstValue = Convert.ToSingle(Console.ReadLine());
+
+		Console.WriteLine("Enter the 2nd Value: ");
+		float SecondValue = Convert.ToSingle(Console.ReadLine());
+		
+		Console.WriteLine("");
+		
+		Console.WriteLine("Choose an Operator: ");
+		Console.WriteLine("Click 1 for Addition +");
+        Console.WriteLine("Click 2 for Subtraction -");
+        Console.WriteLine("Click 3 for Multiplication *");
+        Console.WriteLine("Click 4 for Division /");
+        Console.WriteLine("Click 5 for the Remainder (Modulo %)");
+        Console.Write("Enter choice: ");
+        int Operator = Convert.ToInt32(Console.ReadLine());
+        //User Input
+        
+        float Result = 0;
+        //Default value of the result to be recognized by the decision making below
+        
+        if (Operator == 1) {
+            Result = FirstValue + SecondValue;
+        }
+        else if (Operator == 3) {
+            Result = FirstValue * SecondValue;
+        }
+        else if (Operator == 4) {
+            Result = FirstValue / SecondValue;
+        }
+        else if (Operator == 2) {
+            Result = FirstValue - SecondValue;
+        }
+        else if (Operator == 5) {
+            Result = FirstValue % SecondValue;
+        }
+        else {
+             Console.WriteLine("");
+             Console.WriteLine("Was that in the choices lol");
+             return;
+        }
+        
+        Console.WriteLine("");
+        Console.WriteLine("The answer is " + Result);
+		
+
+	}
+}
