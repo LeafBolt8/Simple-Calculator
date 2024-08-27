@@ -1,10 +1,10 @@
 using System;
 
-class Program {
-	public static void Main(String[] args) {
+class Program {//bracket 1
+	public static void Main(String[] args) {//bracket 2
         bool repeat = true;
 
-        while (repeat) {
+        while (repeat) {//start of while loop for the calculator
         Console.WriteLine("");
 		Console.WriteLine("///////// /Welcome to the Calculator! ///////////////");
 		Console.WriteLine("ENTER NUMBERS ONLY!");
@@ -93,6 +93,6 @@ class Program {
             repeat = false;
         }
 		
-    }
-	}
-}
+    }//end of while loop for calculator
+	}//bracket 2
+}//bracket 1
