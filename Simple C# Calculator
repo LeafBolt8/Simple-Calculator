@@ -36,30 +36,36 @@ class Program {
             Result = FirstValue + SecondValue;
             Console.WriteLine("");
             Console.WriteLine("The answer is: " + Result);
+            Console.WriteLine("///////// /End of current session! ///////////////");
         }
         else if (Operator == 3) {
             Result = FirstValue * SecondValue;
             Console.WriteLine("");
             Console.WriteLine("The answer is: " + Result);
+            Console.WriteLine("///////// /End of current session! ///////////////");
         }
         else if (Operator == 4) {
             Result = FirstValue / SecondValue;
             Console.WriteLine("");
             Console.WriteLine("The answer is: " + Result);
+            Console.WriteLine("///////// /End of current session! ///////////////");
         }
         else if (Operator == 2) {
             Result = FirstValue - SecondValue;
             Console.WriteLine("");
             Console.WriteLine("The answer is: " + Result);
+            Console.WriteLine("///////// /End of current session! ///////////////");
         }
         else if (Operator == 5) {
             Result = FirstValue % SecondValue;
             Console.WriteLine("");
             Console.WriteLine("The answer is: " + Result);
+            Console.WriteLine("///////// /End of current session! ///////////////");
         }
         else {
              Console.WriteLine("");
              Console.WriteLine("Was that in the choices lol");
+             Console.WriteLine("///////// /End of current session! ///////////////");
              continue;
         }
         
