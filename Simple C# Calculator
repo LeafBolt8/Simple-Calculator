@@ -5,7 +5,8 @@ class Program {
         bool repeat = true;
 
         while (repeat) {
-		Console.WriteLine("Welcome to the Calculator!");
+        Console.WriteLine("");
+		Console.WriteLine("///////// /Welcome to the Calculator! ///////////////");
 		Console.WriteLine("ENTER NUMBERS ONLY!");
 
 		Console.WriteLine("");
@@ -33,18 +34,28 @@ class Program {
         
         if (Operator == 1) {
             Result = FirstValue + SecondValue;
+            Console.WriteLine("");
+            Console.WriteLine("The answer is: " + Result);
         }
         else if (Operator == 3) {
             Result = FirstValue * SecondValue;
+            Console.WriteLine("");
+            Console.WriteLine("The answer is: " + Result);
         }
         else if (Operator == 4) {
             Result = FirstValue / SecondValue;
+            Console.WriteLine("");
+            Console.WriteLine("The answer is: " + Result);
         }
         else if (Operator == 2) {
             Result = FirstValue - SecondValue;
+            Console.WriteLine("");
+            Console.WriteLine("The answer is: " + Result);
         }
         else if (Operator == 5) {
             Result = FirstValue % SecondValue;
+            Console.WriteLine("");
+            Console.WriteLine("The answer is: " + Result);
         }
         else {
              Console.WriteLine("");
@@ -52,10 +63,9 @@ class Program {
              continue;
         }
         
-        Console.WriteLine("");
-        Console.WriteLine("The answer is: " + Result);
         
         //user repeats!!!!!!!!!!!!!!!!!!!!!!!!
+        
         
         Console.WriteLine("");
         Console.WriteLine("Would you like to use the calculator once again?");
@@ -67,11 +77,14 @@ class Program {
              continue;
         }
         else if (response == "N"){
+            Console.WriteLine("");
             Console.WriteLine("Thank you for using the calculator?");
             repeat = false;
         }
         else{
+            Console.WriteLine("");
             Console.WriteLine("Did you input right??");
+            repeat = false;
         }
 		
     }
